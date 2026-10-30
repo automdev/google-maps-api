@@ -69,7 +69,7 @@ response = requests.get(
     "https://api.autom.dev/v1/google/maps",
     headers=HEADERS,
     params={
-        "query": "YOUR_VALUE",
+        "query": "bar paris",
     },
     timeout=120,
 )
@@ -95,7 +95,7 @@ type GoogleMapsApi = {
 const headers = { "x-api-key": process.env.AUTOM_API_KEY!, "Content-Type": "application/json" };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "bar paris",
 });
 
 const response = await fetch(`https://api.autom.dev/v1/google/maps?${params}`, { headers });
